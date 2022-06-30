@@ -1,6 +1,7 @@
 # RISC-V Chisel Fromal Verification
 
-Formal verification of instruction set consistency for Chisel designed RISC-V processors.
+Formal verification of instruction set consistency for RTL design of RISC-V
+processors in Chisel.
 
 ## Included Projects
 
