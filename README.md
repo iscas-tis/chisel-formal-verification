@@ -1,4 +1,4 @@
-# Chisel Fromal Verification
+# Chisel Formal Verification
 
 Formal verification tools for Chisel and RISC-V.
 
