@@ -2,6 +2,7 @@
 
 Formal verification tools for Chisel and RISC-V.
 
+[简体中文](./README_CN.md) [English](./README.md)
 ## Contents <!-- omit in toc -->
 
 - [Tools](#tools)
