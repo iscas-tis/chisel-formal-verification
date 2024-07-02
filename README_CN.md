@@ -20,7 +20,7 @@
 [CHA](https://github.com/iscas-tis/CHA) 是一个建立在 ChiselTest 上的针对 Chisel 程序的断言语言和验证工具，其中使用类似于 SystemVerilog 断言（SVA）的时序运算符扩展了 Chisel 断言语言。
 可以对 Chisel 硬件设计和一般时序性质进行形式化验证。
 
-### RISC-V Spec Core: RISC-V指令集一致性验证工具
+### RISC-V Spec Core: RISC-V 指令集一致性验证工具
 
 [riscv-spec-core](https://github.com/iscas-tis/riscv-spec-core) 使用一个参考模型来表示 RISC-V 指令集规范文档的语义。
 待验证的 Chisel 处理器设计应该和参考模型的功能一致。项目中还提供了帮助在参考模型和处理器设计间进行信号同步的工具。
