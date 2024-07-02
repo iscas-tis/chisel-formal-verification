@@ -29,6 +29,6 @@
 
 ### NutShell
 
-经验证的 NutShell 仓库见： [nutshell-fv](https://github.com/iscas-tis/nutshell-fv).
+经验证的 NutShell 仓库见：[nutshell-fv](https://github.com/iscas-tis/nutshell-fv)。
 
-在这个处理器设计的例子中，我们使用了工具链中的[riscv-spec-core](https://github.com/iscas-tis/riscv-spec-core)组成了一个包含参考模型和性质的可验证的系统，并通过[ChiselTest](https://github.com/ucb-bar/chiseltest)调用了 BMC 算法进行形式化验证。
+在这个处理器设计的例子中，我们使用了工具链中的 [riscv-spec-core](https://github.com/iscas-tis/riscv-spec-core) 组成了一个包含参考模型和性质的可验证的系统，并通过 [ChiselTest](https://github.com/ucb-bar/chiseltest) 调用了 BMC 算法进行形式化验证。
