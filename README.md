@@ -6,12 +6,11 @@ Formal verification tools for Chisel and RISC-V.
 
 ## Contents <!-- omit in toc -->
 
-- [Chisel Formal Verification](#chisel-formal-verification)
-  - [Tools](#tools)
-    - [CHA: a verification tool supports SVA-like assertions in Chisel](#cha-a-verification-tool-supports-sva-like-assertions-in-chisel)
-    - [RISC-V Spec Core: instruction set consistency verification for RISC-V](#risc-v-spec-core-instruction-set-consistency-verification-for-risc-v)
-  - [Verification Example](#verification-example)
-    - [NutShell](#nutshell)
+- [Tools](#tools)
+  - [CHA: a verification tool supports SVA-like assertions in Chisel](#cha-a-verification-tool-supports-sva-like-assertions-in-chisel)
+  - [RISC-V Spec Core: instruction set consistency verification for RISC-V](#risc-v-spec-core-instruction-set-consistency-verification-for-risc-v)
+- [Verification Example](#verification-example)
+  - [NutShell](#nutshell)
 
 ## Tools
 

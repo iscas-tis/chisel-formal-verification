@@ -6,12 +6,11 @@
 
 ## 仓库内容 <!-- omit in toc -->
 
-- [Chisel Formal Verification](#chisel-formal-verification)
-  - [工具集合](#工具集合)
-    - [CHA: 在 Chisel 中支持类似 SVA 断言的验证工具](#cha-在-chisel-中支持类似-sva-断言的验证工具)
-    - [RISC-V Spec Core: RISC-V指令集一致性验证工具](#risc-v-spec-core-risc-v指令集一致性验证工具)
-  - [验证示例](#验证示例)
-    - [NutShell](#nutshell)
+- [工具链](#工具链)
+  - [CHA: 在 Chisel 中支持类似 SVA 断言的验证工具](#cha-在-chisel-中支持类似-sva-断言的验证工具)
+  - [RISC-V Spec Core: RISC-V 指令集一致性验证工具](#risc-v-spec-core-risc-v-指令集一致性验证工具)
+- [验证示例](#验证示例)
+  - [NutShell](#nutshell)
 
 ## 工具链
 
