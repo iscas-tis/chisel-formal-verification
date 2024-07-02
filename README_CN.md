@@ -13,7 +13,7 @@
   - [验证示例](#验证示例)
     - [NutShell](#nutshell)
 
-## 工具集合
+## 工具链
 
 ### CHA: 在 Chisel 中支持类似 SVA 断言的验证工具
 
