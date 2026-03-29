@@ -11,6 +11,7 @@
   - [ChiRVFormal](#chirvformal)
   - [BMCFuzz](#bmcfuzz)
   - [VerinferWidth](#verinferwidth)
+  - [Chicala](#chicala)
   - [LLM4Ind](#llm4ind)
 - [验证示例](#验证示例)
 
@@ -55,6 +56,16 @@ BMCFuzz 通过双向协同流程整合两者，并在 NutShell、Rocket 和 BOOM
 firtool 中的位宽推断算法进行了改进，提出了完备的位宽推断算法，并进行了实现和正确性证明。
 
 *ESOP 2026: A Formally Verified Procedure for Width Inference in FIRRTL*
+
+### Chicala
+
+**基于 Chisel 到 Scala 翻译与 Stainless 的高层 Chisel 验证方法。**
+
+[Chicala](https://github.com/iscas-tis/chicala) 通过 Scala 编译器插件将 Chisel
+硬件设计代码翻译为 Scala 程序，并结合 Scala 软件验证工具 Stainless 进行演绎验证。
+该方法能够利用 Chisel 层面的参数和结构信息，支持对算术电路设计的参数化位宽进行证明。
+
+*DAC 2024: Formally Verifying Arithmetic Chisel Designs for All Bit Widths at Once* [Link](https://dl.acm.org/doi/10.1145/3649329.3657311) | [BibTex](https://dblp.org/rec/conf/dac/FengL0J0W24.html?view=bibtex)
 
 ### LLM4Ind
 

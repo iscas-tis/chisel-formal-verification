@@ -11,6 +11,7 @@ Formal verification tools for Chisel and RISC-V.
   - [ChiRVFormal](#chirvformal)
   - [BMCFuzz](#bmcfuzz)
   - [VerinferWidth](#verinferwidth)
+  - [Chicala](#chicala)
   - [LLM4Ind](#llm4ind)
 - [Verification Examples](#verification-examples)
 
@@ -69,6 +70,19 @@ It also improves the width inference algorithm in the official compiler
 and mechanized correctness proof.
 
 *ESOP 2026: A Formally Verified Procedure for Width Inference in FIRRTL*
+
+### Chicala
+
+**A high-level Chisel verification method based on Chisel-to-Scala translation
+and Stainless.**
+
+[Chicala](https://github.com/iscas-tis/chicala) translates Chisel hardware
+designs into Scala programs via a compiler plugin, enabling deductive
+verification with Scala software verification tool Stainless.
+It supports reasoning with Chisel-level parameter and structure information,
+including proofs for arithmetic designs across bit widths.
+
+*DAC 2024: Formally Verifying Arithmetic Chisel Designs for All Bit Widths at Once* [Link](https://dl.acm.org/doi/10.1145/3649329.3657311) | [BibTex](https://dblp.org/rec/conf/dac/FengL0J0W24.html?view=bibtex)
 
 ### LLM4Ind
 
