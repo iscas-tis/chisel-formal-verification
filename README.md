@@ -10,7 +10,7 @@ Formal verification tools for Chisel and RISC-V.
   - [CHA](#cha)
   - [ChiRVFormal](#chirvformal)
   - [BMCFuzz](#bmcfuzz)
-  - [VerinferWidth](#verinferwidth)
+  - [Coq-firrtl](#coq-firrtl)
   - [Chicala](#chicala)
   - [LLM4Ind](#llm4ind)
 - [Verification Examples](#verification-examples)
@@ -59,11 +59,11 @@ vulnerabilities.
 
 *ICCAD 2025: BMCFuzz: Hybrid Verification of Processors by Synergistic Integration of Bound Model Checking and Fuzzing* [Link](https://ieeexplore.ieee.org/document/11240887)
 
-### VerinferWidth
+### Coq-firrtl
 
 **Formally verifying the FIRRTL compilation flow in Coq.**
 
-[VerinferWidth](https://github.com/iscas-tis/coq-firrtl) formalizes and proves
+[Coq-firrtl](https://github.com/iscas-tis/coq-firrtl) formalizes and proves
 the correctness of three key FIRRTL compilation steps.
 It also improves the width inference algorithm in the official compiler
 `firtool` by proposing a complete procedure, together with its implementation

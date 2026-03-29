@@ -10,7 +10,7 @@
   - [CHA](#cha)
   - [ChiRVFormal](#chirvformal)
   - [BMCFuzz](#bmcfuzz)
-  - [VerinferWidth](#verinferwidth)
+  - [Coq-firrtl](#coq-firrtl)
   - [Chicala](#chicala)
   - [LLM4Ind](#llm4ind)
 - [验证示例](#验证示例)
@@ -47,11 +47,11 @@ BMCFuzz 通过双向协同流程整合两者，并在 NutShell、Rocket 和 BOOM
 
 *ICCAD 2025: BMCFuzz: Hybrid Verification of Processors by Synergistic Integration of Bound Model Checking and Fuzzing* [Link](https://ieeexplore.ieee.org/document/11240887)
 
-### VerinferWidth
+### Coq-firrtl
 
 **使用 Coq 形式化验证 FIRRTL 编译过程。**
 
-[VerinferWidth](https://github.com/iscas-tis/coq-firrtl)
+[Coq-firrtl](https://github.com/iscas-tis/coq-firrtl)
 针对三个 Chisel 关键编译步骤，完成了形式化定义和正确性证明，并对官方编译器
 firtool 中的位宽推断算法进行了改进，提出了完备的位宽推断算法，并进行了实现和正确性证明。
 
