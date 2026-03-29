@@ -7,14 +7,18 @@ Formal verification tools for Chisel and RISC-V.
 ## Contents <!-- omit in toc -->
 
 - [Tools](#tools)
-  - [CHA: a verification tool supports SVA-like assertions in Chisel](#cha-a-verification-tool-supports-sva-like-assertions-in-chisel)
-  - [RISC-V Spec Core: instruction set consistency verification for RISC-V](#risc-v-spec-core-instruction-set-consistency-verification-for-risc-v)
-- [Verification Example](#verification-example)
-  - [NutShell](#nutshell)
+  - [CHA](#cha)
+  - [ChiRVFormal](#chirvformal)
+  - [BMCFuzz](#bmcfuzz)
+  - [VerinferWidth](#verinferwidth)
+  - [LLM4Ind](#llm4ind)
+- [Verification Examples](#verification-examples)
 
 ## Tools
 
-### CHA: a verification tool supports SVA-like assertions in Chisel
+### CHA
+
+**A verification tool that supports SVA-like assertions in Chisel.**
 
 [CHA](https://github.com/iscas-tis/CHA) is an assertion language and
 verification tool for Chisel programs built on top of ChiselTest, where we
@@ -23,23 +27,68 @@ temporal operators.
 This enables formal verification of Chisel hardware designs against general
 temporal properties.
 
-### RISC-V Spec Core: instruction set consistency verification for RISC-V
+*SEFM 2022: CHA: Supporting SVA-Like Assertions in Formal Verification of Chisel Programs (Tool Paper)* [Link](https://link.springer.com/chapter/10.1007/978-3-031-17108-6_20) | [BibTex](https://citation-needed.springer.com/v2/references/10.1007/978-3-031-17108-6_20?format=bibtex&flavour=citation)
 
-[riscv-spec-core](https://github.com/iscas-tis/riscv-spec-core) use a reference
-model as the formal semantics of RISC-V ISA document.
+### ChiRVFormal
+
+**Instruction set consistency verification for RISC-V.**
+
+[ChiRVFormal](https://github.com/iscas-tis/ChiRVFormal) uses a reference
+model as the formal semantics of the RISC-V ISA document.
 The Chisel processor design to be verified should behave the same as the
 reference model.
-Tools to help with signal synchronization between reference model and processor
-design are also included in this project.
+This project also includes tools for signal synchronization between the
+reference model and the processor design.
 
-## Verification Example
+*SETTA 2024: Formal Verification of RISC-V Processor Chisel Designs* [Link](https://link.springer.com/chapter/10.1007/978-981-96-0602-3_8) | [BibTex](https://citation-needed.springer.com/v2/references/10.1007/978-981-96-0602-3_8?format=bibtex&flavour=citation)  
+*JSA 2026: χRVFormal: Formal Verification of RISC-V Processor Chisel Designs* [Link](https://doi.org/10.1016/j.sysarc.2026.103761) | [BibTex](https://www.sciencedirect.com/sdfe/arp/cite?pii=S1383762126000792&format=text%2Fx-bibtex&withabstract=true)
 
-### NutShell
+### BMCFuzz
 
-See [nutshell-fv](https://github.com/iscas-tis/nutshell-fv).
+**A two-way hybrid verification approach that synergistically integrates bounded model checking and coverage-guided fuzzing.**
 
-In this example of processor design, we use
-[riscv-spec-core](https://github.com/iscas-tis/riscv-spec-core) to obtain a
-verifiable system with reference model.
-And then perform formal verification using BMC through
-[ChiselTest](https://github.com/ucb-bar/chiseltest).
+[BMCFuzz](https://github.com/iscas-versys/BMCFuzz) is a fuzzing framework for
+processor verification that combines bounded model checking (BMC) and
+coverage-guided fuzzing (CGF).
+BMC and CGF are complementary: BMC is exhaustive within a bound but suffers
+from state-space explosion, while CGF is scalable but seed-dependent.
+BMCFuzz integrates both in a two-way workflow and is evaluated on NutShell,
+Rocket, and BOOM, reporting higher coverage and three previously unknown
+vulnerabilities.
+
+*ICCAD 2025: BMCFuzz: Hybrid Verification of Processors by Synergistic Integration of Bound Model Checking and Fuzzing* [Link](https://ieeexplore.ieee.org/document/11240887)
+
+### VerinferWidth
+
+**Formally verifying the FIRRTL compilation flow in Coq.**
+
+[VerinferWidth](https://github.com/iscas-tis/coq-firrtl) formalizes and proves
+the correctness of three key FIRRTL compilation steps.
+It also improves the width inference algorithm in the official compiler
+`firtool` by proposing a complete procedure, together with its implementation
+and mechanized correctness proof.
+
+*ESOP 2026: A Formally Verified Procedure for Width Inference in FIRRTL*
+
+### LLM4Ind
+
+**A neuro-symbolic approach for solving constraints with inductive definitions.**
+
+[LLM4Ind](https://github.com/fengwz17/LLM4Ind) is a project on leveraging
+large language models to help solve constraints involving inductive
+(recursive) definitions.
+It uses structured prompts to generate auxiliary lemmas, then iteratively
+combines LLM conjecture generation with SMT solver checking in a
+neuro-symbolic loop.
+On benchmarks from algebraic data types and recurrence relations, it reports
+around 25% more solved proof tasks than state-of-the-art SMT/CHC solvers.
+
+*FM 2026: Can LLM Aid in Solving Constraints with Inductive Definitions?*
+
+## Verification Examples
+
+- [XiangShan-fv (Nanhu)](https://github.com/chenjie35335/XiangShan-fv)
+- [Zhoushan-fv](https://github.com/chenjie35335/Zhoushan-fv)
+- [nutshell-fv](https://github.com/iscas-tis/nutshell-fv)
+- [riscv-boom-sim (formal branch)](https://github.com/iscas-versys/riscv-boom-sim/tree/formal)
+- [riscv-mini-formal](https://github.com/SeddonShen/riscv-mini-formal)
